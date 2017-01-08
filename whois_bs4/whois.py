@@ -22,8 +22,11 @@ from bs4 import BeautifulSoup
 import urllib2, sys
 
 url="http://who.is/whois/"
-website=sys.argv[1]
 
+if len(sys.argv)==1:
+    print "[*] Please Provide Domain Name:\n Usages: python whois.py www.examplesite.com\n"
+    sys.exit(0)
+website=sys.argv[1]
 print "[*] Please Wait.... Connecting To Who.is Server.."
 htmldata=urllib2.urlopen(url+website).read()
 class_name="rawWhois"  # Class For Extraction
