@@ -11,16 +11,18 @@ import sys
 import Gethtml
 import Getlink
 
+print len(sys.argv)
 links=[]
-if len(sys.argv)==2:
+if len(sys.argv)==1:
     print "\n[*] Usages : python {} http://www.examplesite.com  option_number\n".format(sys.argv[0])
     print "\t[-] Option [-]\n\n1. Current Page Links and Images \n2. Current Page Links \n3. Current Page Image \n4. Website Images \n5. Website Links"
     sys.exit(0)
+    print "Exit "
     pass
 
 # Option Argument
-option=int(sys.argv[2])
-url=sys.argv[1]
+option=int(sys.argv[1])
+url=sys.argv[0]
 
 # Current Page Links and Images
 if option==1:
