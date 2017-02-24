@@ -1,0 +1,39 @@
+#!/usr/bin/python2.7
+# -*- coding: utf-8 -*-
+
+"""
+Created on Tue Jan 24 23:28:30 2017
+
+@author: abdulbarinoori
+"""
+
+"""
+++++++++++++++++++++++++++++++++
+	READ ME
+++++++++++++++++++++++++++++++++
+Requirements:
+	requests 
+	bs4 
+
+How TO Install:
+	pip install requests
+	pip install bs4
+
+"""
+# Import Module
+import requests
+from bs4 import BeautifulSoup
+
+# Site Url
+url = 'http://www.dailymail.co.uk/home/index.html'
+r = requests.get(url)
+
+soup = BeautifulSoup(r.content, "html.parser")
+links = soup.find_all("h2",{"class":"linkro-darkred"})
+#a = soup.find_all("a",)
+
+for link in links:
+    print(link).get_text().encode('utf-8')
+
+
+
