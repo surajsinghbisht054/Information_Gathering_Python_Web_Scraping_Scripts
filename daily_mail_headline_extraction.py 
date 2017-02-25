@@ -5,9 +5,8 @@
 Created on Tue Jan 24 23:28:30 2017
 
 @author: abdulbarinoori
-"""
 
-"""
+
 ++++++++++++++++++++++++++++++++
 	READ ME
 ++++++++++++++++++++++++++++++++
@@ -26,14 +25,18 @@ from bs4 import BeautifulSoup
 
 # Site Url
 url = 'http://www.dailymail.co.uk/home/index.html'
+print "[*] Connecting To Site...",
 r = requests.get(url)
+print " Done."
 
+print "[*] Feeding Data..",
 soup = BeautifulSoup(r.content, "html.parser")
+print " Done.\n\n\n"
 links = soup.find_all("h2",{"class":"linkro-darkred"})
 #a = soup.find_all("a",)
 
 for link in links:
-    print(link).get_text().encode('utf-8')
+    print "[+] {} ".format((link).get_text().encode('utf-8'))
 
 
 
