@@ -44,3 +44,4 @@ def main(multi_times):
     
 if __name__=='__main__':
 	main(5)
+raw_input('[ Thanks For USing! Have A Nice Day ]')
