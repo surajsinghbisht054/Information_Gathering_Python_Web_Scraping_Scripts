@@ -7,6 +7,14 @@
 #		bitforestinfo.blogspot.com
 #
 #	
+#
+#
+##################################################
+######## Please Don't Remove Author Name #########
+############### Thanks ###########################
+##################################################
+#
+#
 # Import Module
 import re
 import urllib2

@@ -6,6 +6,14 @@
 #       surajsinghbisht054@gmail.com
 #       bitforestinfo.blogspot.com
 #   
+#
+#
+##################################################
+######## Please Don't Remove Author Name #########
+############### Thanks ###########################
+##################################################
+#
+#
 # Import Modules
 import urllib2
 import re
