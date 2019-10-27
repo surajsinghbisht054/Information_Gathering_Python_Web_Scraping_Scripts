@@ -1,72 +1,32 @@
 # Information_Gathering_Python_Web_Scraping_Scripts
-This Script is Created For Practise And Educational Purpose Only
-The Author We will not take any type of responsibility
-__author__='''
+This Script is Created For Practise And Educational Purpose Only. the author will not take any type of responsibility
 
-######################################################
-                By S.S.B Group                          
-######################################################
+<div style="box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);">
 
-    Suraj Singh
-    Admin
-    S.S.B Group
-    surajsinghbisht054@gmail.com
-    https://bitforestinfo.blogspot.in/
+<a href="https://surajsinghbisht054.blogspot.com" target="_blank">
 
-    Note: We Feel Proud To Be Indian
-######################################################
+![author_profile](https://1.bp.blogspot.com/-PX4oBdjyb14/XbOCqgWpATI/AAAAAAAAELo/-jSsyNSMHmkXGXtw9qCT68qiUNqDE2NcACNcBGAsYHQ/s400/logo.png)
+
+</a>
+
+<p> author : surajsinghbisht054@gmail.com </p>
+
+</div>
+
+
+
 
 # About This Script Collection
-These scripts are the examples of bitforestinfo webscraping tutorials
+These scripts are the examples of bitforestinfo webscraping tutorials. here, you will find script for
 
-here, you will find script for
+- Website Crawling
+- Google Scraping
+- Image Downloading
+- File Downloading
+- Html Link Extractor
+- whois scraper
+- and many other. 
 
-Website Crawling
-
-Google Scraping
-
-Image Downloading
-
-File Downloading
-
-Html Link Extractor
-
-whois scraper
-
-and many other. 
-
-# Development.
-
-
-Want to Contribute? Great!
-
-
-There Are 2 Methods.
-
-1. Pull Request ( Github Account Required ).
-
-2. Through Email.
-
-
-### 1. Pull Request ( Github A/c Required ). 
-
-1. Fork it!
-
-2. Create your feature branch: `git checkout -b my-new-feature`
-
-3. Commit your changes: `git commit -am 'Add some feature'`
-
-4. Push to the branch: `git push origin my-new-feature`
-
-5. Submit a pull request :D
-
-
-
-### 2. Through Email.
-
-1. Send Your Updated Version On My Email.
-
-- surajsinghbisht054@gmail.com
 
 
 ----
