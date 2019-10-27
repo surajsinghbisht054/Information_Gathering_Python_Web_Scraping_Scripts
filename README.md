@@ -1,5 +1,5 @@
-# Information_Gathering_Python_Web_Scraping_Scripts
-This Script is Created For Practise And Educational Purpose Only. the author will not take any type of responsibility
+# Information Gathering Related Python Web Scraping tutorial scripts
+All Script are created for Practise purpose only.  author will not take any type of responsibility.
 
 <div style="box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);">
 
@@ -23,7 +23,7 @@ These scripts are the examples of bitforestinfo webscraping tutorials. here, you
 - Google Scraping
 - Image Downloading
 - File Downloading
-- Html Link Extractor
+- Html link extractor
 - whois scraper
 - and many other. 
 
