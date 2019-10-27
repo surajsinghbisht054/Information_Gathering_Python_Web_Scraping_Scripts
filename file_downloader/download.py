@@ -1,10 +1,6 @@
-#!/usr/bin/python
+#!/usr/bin/python3
+
 # -*- coding: utf-8 -*-
-# ---------------- READ ME ---------------------------------------------
-# This Script is Created Only For Practise And Educational Purpose Only
-# This Script Is Created For https://bitforestinfo.blogspot.in
-# This Script is Written By
-#
 #
 ##################################################
 ######## Please Don't Remove Author Name #########
@@ -13,29 +9,18 @@
 #
 #
 __author__='''
-
-######################################################
-                By S.S.B Group                          
-######################################################
-
     Suraj Singh
-    Admin
-    S.S.B Group
     surajsinghbisht054@gmail.com
-    https://bitforestinfo.blogspot.in/
-
-    Note: We Feel Proud To Be Indian
-######################################################
 '''
 
 # Import Module   
-import urllib
+import urllib.request, urllib.parse, urllib.error
 import sys
 import os
 
 # Check Provided Arguments
 if len(sys.argv)==1:
-	print "\n[*] Please Provide File Url Address:\n Usages: python {} www.examplesite.com\\path\\to\\file.zip\n".format(sys.argv[0])
+	print("\n[*] Please Provide File Url Address:\n Usages: python {} www.examplesite.com\\path\\to\\file.zip\n".format(sys.argv[0]))
 	sys.exit(0)
 
 # Progress Reporter
@@ -54,16 +39,16 @@ def filename(url):
 
 	if '.' in url_base: # If file extension available 
 		base = url_base
-		print "[+] File Saved As : ",base
+		print("[+] File Saved As : ",base)
 	else:
-		base = raw_input("[*] File Saved As : ")
+		base = input("[*] File Saved As : ")
 	return base
 
 # Download Function
 def download(url, file_name):
-	print "\n"
-	urllib.urlretrieve(url, file_name, progress) # Downloading File
-	print "\n\n"
+	print("\n")
+	urllib.request.urlretrieve(url, file_name, progress) # Downloading File
+	print("\n\n")
 	return
 
 # Main Function For File Name Management

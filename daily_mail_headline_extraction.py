@@ -25,18 +25,18 @@ from bs4 import BeautifulSoup
 
 # Site Url
 url = 'http://www.dailymail.co.uk/home/index.html'
-print "[*] Connecting To Site...",
+print("[*] Connecting To Site...", end=' ')
 r = requests.get(url)
-print " Done."
+print(" Done.")
 
-print "[*] Feeding Data..",
+print("[*] Feeding Data..", end=' ')
 soup = BeautifulSoup(r.content, "html.parser")
-print " Done.\n\n\n"
+print(" Done.\n\n\n")
 links = soup.find_all("h2",{"class":"linkro-darkred"})
 #a = soup.find_all("a",)
 
 for link in links:
-    print "[+] {} ".format((link).get_text().encode('utf-8'))
+    print("[+] {} ".format((link).get_text().encode('utf-8')))
 
 
 

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 #
 #
@@ -15,17 +15,17 @@
 #       bitforestinfo.blogspot.com
 #   
 # Import Module
-import urllib2
+import urllib.request, urllib.error, urllib.parse
 import os
 
 # Function For Downloading Html
 def main(url):
     try:
-        print "[*] Downloading Html Codes ... ",
-        page = urllib2.urlopen(url).read()
-        print " Done!"
+        print("[*] Downloading Html Codes ... ", end=' ')
+        page = urllib.request.urlopen(url).read()
+        print(" Done!")
     except Exception as e:
-        print "[Error Found] ",e
+        print("[Error Found] ",e)
         page=None
     return page
 
@@ -34,12 +34,12 @@ def image_download(link):
     #print link
     Saved_in = "WebsitePicturesDownloaded"
     if not os.path.isdir(Saved_in):
-        print "[+] Creating Directory... ",Saved_in,
+        print("[+] Creating Directory... ",Saved_in, end=' ')
         os.mkdir(Saved_in)
-        print " Done"
+        print(" Done")
     img=open(os.path.join(Saved_in, os.path.basename(link)),'wb')
-    data=urllib2.urlopen(link)
-    print "[+] Picture Saved As ",os.path.join(Saved_in, os.path.basename(link))
+    data=urllib.request.urlopen(link)
+    print("[+] Picture Saved As ",os.path.join(Saved_in, os.path.basename(link)))
     img.write(data.read())
     img.close()
     return

@@ -1,7 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-##
-#
+
 ##################################################
 ######## Please Don't Remove Author Name #########
 ############### Thanks ###########################
@@ -14,9 +13,9 @@
 #       bitforestinfo.blogspot.com
 #   
 # Import Modules
-import urllib2
-import urllib
-import cookielib
+import urllib.request, urllib.error, urllib.parse
+import urllib.request, urllib.parse, urllib.error
+import http.cookiejar
 import re
 
 # Google Url
@@ -33,17 +32,17 @@ def search(Query, google):
 	header = [('User-Agent','Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.8.0')]
 
 	# Create Cookie Handler
-	cj = cookielib.CookieJar()
+	cj = http.cookiejar.CookieJar()
 
 	# Create Url Handler 
-	url_opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj),  # Connect Cookie Jar
-    	                              urllib2.HTTPRedirectHandler())    # Address Redirect Handling Function
+	url_opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cj),  # Connect Cookie Jar
+    	                              urllib.request.HTTPRedirectHandler())    # Address Redirect Handling Function
 
 	# Connect Header With Opener
 	url_opener.addheaders=header
 
 	# Encode Query With Url 
-	query = google.format(urllib.urlencode({'q':Query}),str(Page))
+	query = google.format(urllib.parse.urlencode({'q':Query}),str(Page))
 
 	# Now Open Google Search Page
 	html = url_opener.open(query)
@@ -64,4 +63,4 @@ def search(Query, google):
 
 if __name__ == '__main__':
 	for i in search(Query, google):
-		print i
+		print(i)
